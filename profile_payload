@@ -1,0 +1,6 @@
+cat *.c | ./minigzip -6 | ./minigzip -d > /dev/null
+cat *.c | ./minigzip -4 | ./minigzip -d > /dev/null
+cat *.c | ./minigzip -9 | ./minigzip -d > /dev/null
+cat *.c | ./minigzip64 -6 | ./minigzip64 -d > /dev/null
+cat *.c | ./minigzip64 -4 | ./minigzip64 -d > /dev/null
+cat *.c | ./minigzip64 -9 | ./minigzip64 -d > /dev/null

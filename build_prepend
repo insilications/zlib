@@ -1,0 +1,2 @@
+#find . -type f -name 'configure*' -exec sed -i 's/\-fPIC/\-fpic/g' {} \;
+#find . -type f -name 'libtool*' -exec sed -i 's/\-fPIC/\-fpic/g' {} \;
