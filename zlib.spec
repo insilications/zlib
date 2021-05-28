@@ -4,10 +4,10 @@
 #
 %define keepstatic 1
 Name     : zlib
-Version  : 1.2.11.1
-Release  : 301
-URL      : file:///aot/build/clearlinux/packages/zlib/zlib-v1.2.11.1.tar.gz
-Source0  : file:///aot/build/clearlinux/packages/zlib/zlib-v1.2.11.1.tar.gz
+Version  : 1.2.11.1.jtkv6.3
+Release  : 302
+URL      : file:///aot/build/clearlinux/packages/zlib/zlib-v1.2.11.1_jtkv6.3.tar.gz
+Source0  : file:///aot/build/clearlinux/packages/zlib/zlib-v1.2.11.1_jtkv6.3.tar.gz
 Summary  : zlib compression library
 Group    : Development/Tools
 License  : BSL-1.0 Zlib
@@ -126,7 +126,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622242841
+export SOURCE_DATE_EPOCH=1622245066
 ## build_prepend content
 #find . -type f -name 'configure*' -exec sed -i 's/\-fPIC/\-fpic/g' {} \;
 #find . -type f -name 'libtool*' -exec sed -i 's/\-fPIC/\-fpic/g' {} \;
@@ -249,7 +249,7 @@ cd ../build32;
 make %{?_smp_mflags} check || : || :
 
 %install
-export SOURCE_DATE_EPOCH=1622242841
+export SOURCE_DATE_EPOCH=1622245066
 rm -rf %{buildroot}
 pushd ../build32/
 %make_install32
